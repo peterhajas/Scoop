@@ -46,15 +46,23 @@
                                                                       SCNewsItemHeight - 40)];
         
         activateButton = [TUIButton button];
+        [activateButton setFrame:[self frame]];
         
         [headlineLabel setText:[backingNewsItem headline]];
         [descriptionLabel setText:[backingNewsItem description]];
+        [activateButton addTarget:self action:@selector(activate) forControlEvents:TUIControlEventTouchUpInside];
+        
         
         [self addSubview:headlineLabel];
         [self addSubview:descriptionLabel];
     }
     
     return self;
+}
+
+-(void)activate
+{
+    // Open the URL associated with this news item
 }
 
 @end

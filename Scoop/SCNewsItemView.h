@@ -39,5 +39,6 @@
 }
 
 -(id)initWithBackingNewsItem:(SCNewsItem*)_backingNewsItem;
+-(void)activate;
 
 @end
