@@ -55,6 +55,7 @@
         
         [self addSubview:headlineLabel];
         [self addSubview:descriptionLabel];
+        [self addSubview:activateButton];
     }
     
     return self;
