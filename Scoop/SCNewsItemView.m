@@ -49,7 +49,7 @@
         [activateButton setFrame:[self frame]];
         
         [headlineLabel setText:[backingNewsItem headline]];
-        [descriptionLabel setText:[backingNewsItem description]];
+        [descriptionLabel setText:[backingNewsItem newsDescription]];
         [activateButton addTarget:self action:@selector(activate) forControlEvents:TUIControlEventTouchUpInside];
         
         
