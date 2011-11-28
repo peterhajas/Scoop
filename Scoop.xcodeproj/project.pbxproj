@@ -18,6 +18,7 @@
 		4F9559531468E41500A83ABE /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9559521468E41500A83ABE /* SCAppDelegate.m */; };
 		4F9559561468E41500A83ABE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9559541468E41500A83ABE /* MainMenu.xib */; };
 		4FC3C969146A2522009ADF16 /* SCInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3C968146A2522009ADF16 /* SCInfiniteScrollView.m */; };
+		4FC6613E14840DA9009CCC9D /* SCFeedInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC6613D14840DA9009CCC9D /* SCFeedInterpreter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +57,8 @@
 		4F9559641468E52500A83ABE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4FC3C967146A2522009ADF16 /* SCInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCInfiniteScrollView.h; sourceTree = "<group>"; };
 		4FC3C968146A2522009ADF16 /* SCInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCInfiniteScrollView.m; sourceTree = "<group>"; };
+		4FC6613C14840DA9009CCC9D /* SCFeedInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFeedInterpreter.h; sourceTree = "<group>"; };
+		4FC6613D14840DA9009CCC9D /* SCFeedInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFeedInterpreter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,7 @@
 				4F9559521468E41500A83ABE /* SCAppDelegate.m */,
 				4F78FB501483468300D489B7 /* Display Manager */,
 				4F07A595148317C000966A3A /* Infinite Scroll View */,
+				4FC6614014840DAC009CCC9D /* Feed Interpreter */,
 				4F07A59A148317F400966A3A /* News Item */,
 				4F9559541468E41500A83ABE /* MainMenu.xib */,
 				4F9559461468E41500A83ABE /* Supporting Files */,
@@ -163,6 +167,15 @@
 				4F95594E1468E41500A83ABE /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FC6614014840DAC009CCC9D /* Feed Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				4FC6613C14840DA9009CCC9D /* SCFeedInterpreter.h */,
+				4FC6613D14840DA9009CCC9D /* SCFeedInterpreter.m */,
+			);
+			name = "Feed Interpreter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +248,7 @@
 				4F07A599148317EB00966A3A /* SCNewsItemView.m in Sources */,
 				4F07A59D1483180700966A3A /* SCNewsItem.m in Sources */,
 				4F07A5A61483466300966A3A /* SCDisplayManager.m in Sources */,
+				4FC6613E14840DA9009CCC9D /* SCFeedInterpreter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
