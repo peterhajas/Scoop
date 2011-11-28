@@ -142,6 +142,8 @@
     
     float x = [view contentOffset].x;
     
+    NSLog(@"x: %f", x);
+    
     if(x > -1 * totalViewWidth)
     {
         [view setContentOffset:CGPointMake(x - totalViewWidth, 0)];

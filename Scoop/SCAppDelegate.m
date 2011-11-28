@@ -40,10 +40,10 @@
     
     // The display manager
     displayManager = [[SCDisplayManager alloc] initWithViewFrame:frame];
-    
+    [displayManager prepareViews];
     // Our NSView bridge
     viewContainer = [[TUINSView alloc] initWithFrame:frame];
-        
+    
     [window setContentView:viewContainer];
     [viewContainer setRootView:[displayManager containerView]];
     

@@ -41,7 +41,7 @@
     return self;
 }
 
--(void)didMoveToSuperview
+-(void)prepareViews
 {
     // Our containerView
     containerView = [[TUIView alloc] initWithFrame:viewFrame];

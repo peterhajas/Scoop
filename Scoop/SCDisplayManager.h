@@ -37,6 +37,7 @@
 }
 
 -(id)initWithViewFrame:(CGRect)frame;
+-(void)prepareViews;
 
 @property (nonatomic, readonly) TUIView* containerView;
 @end
