@@ -27,15 +27,14 @@
 
 #import <Cocoa/Cocoa.h>
 #import <TwUI/TUIKit.h>
-#import "SCInfiniteScrollView.h"
-#import "SCNewsItemView.h"
+#import "SCDisplayManager.h"
 
-@interface SCAppDelegate : NSObject <NSApplicationDelegate, SCInfiniteScrollViewDataSource>
+@interface SCAppDelegate : NSObject <NSApplicationDelegate>
 {
-    TUINSView* scrollViewContainer;
-    TUIView* containerView;
-    SCInfiniteScrollView* scrollView;
+    TUINSView* viewContainer;
     NSWindow *window;
+    
+    SCDisplayManager* displayManager;
 }
 
 //-(void)move;

@@ -38,57 +38,16 @@
     [window setTitle:@"Scoop"];
     [window center];
     
+    // The display manager
+    displayManager = [[SCDisplayManager alloc] initWithViewFrame:frame];
     
-    // Our scrollview container view
-    scrollViewContainer = [[TUINSView alloc] initWithFrame:frame];
-    
-    // Our container TUIView
-    containerView = [[TUIView alloc] initWithFrame:frame];
-    
-    // And our scrollview!
-    scrollView = [[SCInfiniteScrollView alloc] initWithDataSource:self];
-    [scrollView setAutoresizingMask:TUIViewAutoresizingFlexibleSize];
-    
-    [scrollView setFrame:CGRectMake(0,0,1000,40)];
-    
-    [window setContentView:scrollViewContainer];
-    [scrollViewContainer setRootView:containerView];
-    
-    [scrollView reloadData];
-    
-    [containerView addSubview:scrollView];
-    
-    [containerView setBackgroundColor:[TUIColor darkGrayColor]];
+    // Our NSView bridge
+    viewContainer = [[TUINSView alloc] initWithFrame:frame];
+        
+    [window setContentView:viewContainer];
+    [viewContainer setRootView:[displayManager containerView]];
     
     [window makeKeyAndOrderFront:nil];
 }
 
--(NSUInteger)numberOfViews
-{
-    return 10;
-}
-
--(CGRect)viewRectForViewAtIndex:(NSUInteger)index
-{
-    return [[self viewAtIndex:index] frame];
-}
-
--(TUIView*)viewAtIndex:(NSUInteger)index
-{    
-    // Create the SCNewsItem
-    
-    SCNewsItem* newsItem = [[SCNewsItem alloc] initWithHeadline:[NSString stringWithFormat:@"Headline %lu", index] newsDescription:@"Description" andLinkToItem:[NSURL URLWithString:@"localhost"]];
-    SCNewsItemView* newsItemView = [[SCNewsItemView alloc] initWithBackingNewsItem:newsItem];
-    
-    return newsItemView;
-}
-
-/*
--(void)move
-{
-    float x = scrollView.contentOffset.x;
-    x-=0.5;
-    [scrollView setContentOffset:CGPointMake(x, 0)];
-}
-*/
 @end
