@@ -28,6 +28,7 @@
 #import <Cocoa/Cocoa.h>
 #import <TwUI/TUIKit.h>
 #import "SCInfiniteScrollView.h"
+#import "SCNewsItemView.h"
 
 @interface SCAppDelegate : NSObject <NSApplicationDelegate, SCInfiniteScrollViewDataSource>
 {

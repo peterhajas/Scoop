@@ -37,13 +37,20 @@
         backingNewsItem = _backingNewsItem;
         
         headlineLabel = [[TUILabel alloc] initWithFrame:CGRectMake(20,
-                                                                   20,
+                                                                   10,
                                                                    SCNewsItemWidth/3,
-                                                                   SCNewsItemHeight - 40)];
+                                                                   SCNewsItemHeight - 20)];
+        [headlineLabel setFont:[TUIFont boldSystemFontOfSize:17.0]];
+        [headlineLabel setTextColor:[TUIColor whiteColor]];
+        [headlineLabel setBackgroundColor:[TUIColor redColor]];
+        
         descriptionLabel = [[TUILabel alloc] initWithFrame:CGRectMake(40 + SCNewsItemWidth/3,
-                                                                      20,
+                                                                      10,
                                                                       SCNewsItemWidth/2.5,
-                                                                      SCNewsItemHeight - 40)];
+                                                                      SCNewsItemHeight - 20)];
+        [descriptionLabel setFont:[TUIFont systemFontOfSize:17.0]];
+        [descriptionLabel setTextColor:[TUIColor lightGrayColor]];
+        [descriptionLabel setBackgroundColor:[TUIColor blueColor]];
         
         activateButton = [TUIButton button];
         [activateButton setFrame:[self frame]];

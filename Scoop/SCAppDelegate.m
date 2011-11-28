@@ -31,11 +31,13 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    CGRect frame = CGRectMake(0, 0, 600, 100);
-    window = [[NSWindow alloc] initWithContentRect:frame styleMask:NSTitledWindowMask | NSClosableWindowMask | NSResizableWindowMask backing:NSBackingStoreBuffered defer:NO];
+    CGRect frame = CGRectMake(0, 0, 1000, 40);
+    window = [[NSWindow alloc] initWithContentRect:frame styleMask:NSTitledWindowMask | NSResizableWindowMask backing:NSBackingStoreBuffered defer:NO];
     
     [window setReleasedWhenClosed:NO];
+    [window setTitle:@"Scoop"];
     [window center];
+    
     
     // Our scrollview container view
     scrollViewContainer = [[TUINSView alloc] initWithFrame:frame];
@@ -47,7 +49,7 @@
     scrollView = [[SCInfiniteScrollView alloc] initWithDataSource:self];
     [scrollView setAutoresizingMask:TUIViewAutoresizingFlexibleSize];
     
-    [scrollView setFrame:CGRectMake(0,0,600,100)];
+    [scrollView setFrame:CGRectMake(0,0,1000,40)];
     
     [window setContentView:scrollViewContainer];
     [scrollViewContainer setRootView:containerView];
@@ -56,17 +58,14 @@
     
     [containerView addSubview:scrollView];
     
-    [containerView setBackgroundColor:[TUIColor orangeColor]];
+    [containerView setBackgroundColor:[TUIColor darkGrayColor]];
     
     [window makeKeyAndOrderFront:nil];
-        
-    //scrollView.horizontalScrollIndicatorVisibility = TUIScrollViewIndicatorVisibleNever;
-    //[NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(move) userInfo:nil repeats:YES];
 }
 
 -(NSUInteger)numberOfViews
 {
-    return 20;
+    return 10;
 }
 
 -(CGRect)viewRectForViewAtIndex:(NSUInteger)index
@@ -75,18 +74,13 @@
 }
 
 -(TUIView*)viewAtIndex:(NSUInteger)index
-{
-    NSLog(@"asked for view at index: %lu", index);
+{    
+    // Create the SCNewsItem
     
-    // Load the image
+    SCNewsItem* newsItem = [[SCNewsItem alloc] initWithHeadline:[NSString stringWithFormat:@"Headline %lu", index] newsDescription:@"Description" andLinkToItem:[NSURL URLWithString:@"localhost"]];
+    SCNewsItemView* newsItemView = [[SCNewsItemView alloc] initWithBackingNewsItem:newsItem];
     
-    NSImage* cocoaImage = [[NSImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForImageResource:[NSString stringWithFormat:@"%d", index%10]]];
-    CGImageRef imageRef = [cocoaImage CGImageForProposedRect:nil context:nil hints:nil];
-    TUIImage* image = [[TUIImage alloc] initWithCGImage:imageRef];
-    
-    TUIImageView* imageView = [[TUIImageView alloc] initWithImage:image];
-
-    return imageView;
+    return newsItemView;
 }
 
 /*
