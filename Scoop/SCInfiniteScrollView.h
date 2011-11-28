@@ -31,7 +31,6 @@
 @protocol SCInfiniteScrollViewDataSource <NSObject>
 
 -(NSUInteger)numberOfViews;
--(CGRect)viewRectForViewAtIndex:(NSUInteger)index;
 -(TUIView*)viewAtIndex:(NSUInteger)index;
 
 @end
