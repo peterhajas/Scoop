@@ -17,6 +17,7 @@
 		4F9559501468E41500A83ABE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4F95594E1468E41500A83ABE /* Credits.rtf */; };
 		4F9559531468E41500A83ABE /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9559521468E41500A83ABE /* SCAppDelegate.m */; };
 		4F9559561468E41500A83ABE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9559541468E41500A83ABE /* MainMenu.xib */; };
+		4FAC77271488058F003CD087 /* PubSub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAC77261488058E003CD087 /* PubSub.framework */; };
 		4FC3C969146A2522009ADF16 /* SCInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3C968146A2522009ADF16 /* SCInfiniteScrollView.m */; };
 		4FC6613E14840DA9009CCC9D /* SCFeedInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC6613D14840DA9009CCC9D /* SCFeedInterpreter.m */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		4F9559521468E41500A83ABE /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
 		4F9559551468E41500A83ABE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4F9559641468E52500A83ABE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4FAC77261488058E003CD087 /* PubSub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PubSub.framework; path = System/Library/Frameworks/PubSub.framework; sourceTree = SDKROOT; };
 		4FC3C967146A2522009ADF16 /* SCInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCInfiniteScrollView.h; sourceTree = "<group>"; };
 		4FC3C968146A2522009ADF16 /* SCInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCInfiniteScrollView.m; sourceTree = "<group>"; };
 		4FC6613C14840DA9009CCC9D /* SCFeedInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFeedInterpreter.h; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FAC77271488058F003CD087 /* PubSub.framework in Frameworks */,
 				4F9559401468E41500A83ABE /* Cocoa.framework in Frameworks */,
 				4F07A59F14831DEB00966A3A /* TwUI.framework in Frameworks */,
 			);
@@ -107,6 +110,7 @@
 		4F9559301468E41500A83ABE = {
 			isa = PBXGroup;
 			children = (
+				4FAC77261488058E003CD087 /* PubSub.framework */,
 				4F9559451468E41500A83ABE /* Scoop */,
 				4F95593E1468E41500A83ABE /* Frameworks */,
 				4F95593C1468E41500A83ABE /* Products */,
