@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <PubSub/PubSub.h>
 #import "SCNewsItem.h"
 
 @protocol SCFeedInterpreterDelegate <NSObject>
@@ -17,6 +18,8 @@
 
 @interface SCFeedInterpreter : NSObject
 {
+    PSClient* client;
+    
     NSURL* feedAddress;
     NSArray* currentNewsItems;
 }

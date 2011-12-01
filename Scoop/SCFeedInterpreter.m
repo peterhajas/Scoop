@@ -18,6 +18,8 @@
     if(self)
     {
         feedAddress = _feedAddress;
+        client = [PSClient applicationClient];
+        [client addFeedWithURL:feedAddress];
         currentNewsItems = [[NSArray alloc] init];
         [self _update];
     }
