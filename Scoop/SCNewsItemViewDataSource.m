@@ -29,6 +29,8 @@
 
 @implementation SCNewsItemViewDataSource
 
+@synthesize feedIntepreter;
+
 -(id)initWithDelegate:(id)_delegate
 {
     self = [super init];

@@ -93,5 +93,15 @@
     [scrollView reloadData];
 }
 
+-(NSURL*)feedAddress
+{
+    return [[newsItemViewDataSource feedIntepreter] feedAddress];
+}
+
+-(void)setFeedAddress:(NSURL *)feedAddress
+{
+    [[newsItemViewDataSource feedIntepreter] setFeedAddress:feedAddress];
+}
+
 
 @end

@@ -44,4 +44,5 @@
 -(void)prepareViews;
 
 @property (nonatomic, readonly) TUIView* containerView;
+@property (readwrite, retain) NSURL* feedAddress;
 @end

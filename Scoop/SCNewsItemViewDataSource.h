@@ -51,4 +51,6 @@
 -(SCNewsItemView*)newsItemViewAtIndex:(NSUInteger)index;
 -(NSUInteger)newsItemCount;
 
+@property (nonatomic, retain) SCFeedInterpreter* feedIntepreter;
+
 @end
