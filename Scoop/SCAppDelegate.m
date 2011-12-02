@@ -32,7 +32,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     CGRect frame = CGRectMake(0, 0, 1000, 40);
-    window = [[NSWindow alloc] initWithContentRect:frame styleMask:NSTitledWindowMask | NSResizableWindowMask backing:NSBackingStoreBuffered defer:NO];
+    window = [[SCBorderlessWindow alloc] initWithContentRect:frame];
     
     [window setReleasedWhenClosed:NO];
     [window setTitle:@"Scoop"];
@@ -48,6 +48,7 @@
     [viewContainer setRootView:[displayManager containerView]];
     
     [window makeKeyAndOrderFront:nil];
+    [window goToTop];
 }
 
 @end

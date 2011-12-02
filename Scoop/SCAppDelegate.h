@@ -27,12 +27,13 @@
 
 #import <Cocoa/Cocoa.h>
 #import <TwUI/TUIKit.h>
+#import "SCBorderlessWindow.h"
 #import "SCDisplayManager.h"
 
 @interface SCAppDelegate : NSObject <NSApplicationDelegate>
 {
     TUINSView* viewContainer;
-    NSWindow *window;
+    SCBorderlessWindow *window;
     
     SCDisplayManager* displayManager;
 }
