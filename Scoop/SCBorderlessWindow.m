@@ -16,6 +16,7 @@
     if(self)
     {
         [self setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces];
+        [self setAcceptsMouseMovedEvents:YES];
     }
     return self;
 }
