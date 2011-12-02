@@ -47,8 +47,6 @@
 
 -(void)reloadData
 {
-    NSLog(@"reload data called!");
-    
     // Loop through the number of views that the data source says we have
     
     for(TUIView* view in [scrollView subviews])
