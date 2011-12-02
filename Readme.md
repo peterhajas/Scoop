@@ -8,8 +8,6 @@ About
 
 Scoop is a news ticker for the Mac.
 
-It doesn't do this yet. Right now, it scrolls through some pictures. Cool, huh?
-
 Legal
 -----
 
