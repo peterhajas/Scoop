@@ -12,7 +12,9 @@
 
 @protocol SCFeedInterpreterDelegate <NSObject>
 
--(void)feedHasChanged;
+-(void)feedHasChangedWithNewsItems:(NSArray*)newsItems;
+-(void)feedHasUpdateStatus:(BOOL)isUpdating;
+-(void)feedHasNewItems;
 
 @end
 
@@ -21,12 +23,12 @@
     PSClient* client;
     
     NSURL* feedAddress;
-    NSArray* currentNewsItems;
+    
+    id<SCFeedInterpreterDelegate> delegate;
 }
 
--(id)initWithFeedAddress:(NSURL*)_feedAddress;
--(void)_update;
+-(id)initWithDelegate:(id)_delegate;
 
-@property(nonatomic, readonly) NSArray* currentNewsItems;
+@property (readwrite, retain) NSURL* feedAddress;
 
 @end
