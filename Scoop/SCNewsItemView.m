@@ -42,15 +42,27 @@
                                                                    SCNewsItemHeight - 20)];
         [headlineLabel setFont:[TUIFont boldSystemFontOfSize:17.0]];
         [headlineLabel setTextColor:[TUIColor whiteColor]];
-        [headlineLabel setBackgroundColor:[TUIColor redColor]];
-                
+        [headlineLabel setBackgroundColor:[TUIColor clearColor]];
+        [headlineLabel setAlignment:TUITextAlignmentCenter];
+        
         activateButton = [TUIButton button];
         [activateButton setFrame:[self frame]];
         
         [headlineLabel setText:[backingNewsItem headline]];
         [activateButton addTarget:self action:@selector(activate) forControlEvents:TUIControlEventTouchUpInside];
         
+        // innerView is to give us a nice box outline for this news item
         
+        innerView = [[TUIView alloc] initWithFrame:CGRectMake([self frame].origin.x + 1,
+                                                              [self frame].origin.y + 1,
+                                                              [self frame].size.width - 1, // For even borders
+                                                              [self frame].size.height - 2)];
+        
+        [innerView setBackgroundColor:[TUIColor darkGrayColor]];
+        
+        [self setBackgroundColor:[TUIColor grayColor]];
+        
+        [self addSubview:innerView];
         [self addSubview:headlineLabel];
         [self addSubview:activateButton];
     }

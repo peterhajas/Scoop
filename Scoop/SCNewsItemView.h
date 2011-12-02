@@ -34,6 +34,8 @@
     
     TUIButton* activateButton;
     
+    TUIView* innerView;
+    
     SCNewsItem* backingNewsItem;
 }
 
