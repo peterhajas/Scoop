@@ -7,8 +7,14 @@
 //
 
 #import <AppKit/AppKit.h>
+#import "SCTrackingView.h"
 
 @interface SCBorderlessWindow : NSWindow
+{
+    SCTrackingView* trackingView;
+}
+
+@property (nonatomic, retain) TUINSView* trackingView;
 
 -(id)initWithContentRect:(NSRect)contentRect;
 -(void)goToTop;

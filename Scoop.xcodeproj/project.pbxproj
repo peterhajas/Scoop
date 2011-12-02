@@ -21,6 +21,7 @@
 		4FC3C969146A2522009ADF16 /* SCInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3C968146A2522009ADF16 /* SCInfiniteScrollView.m */; };
 		4FC6613E14840DA9009CCC9D /* SCFeedInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC6613D14840DA9009CCC9D /* SCFeedInterpreter.m */; };
 		4FD765C81489466C0008AAD2 /* SCBorderlessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD765C71489466C0008AAD2 /* SCBorderlessWindow.m */; };
+		4FD765CD14894F660008AAD2 /* SCTrackingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD765CC14894F660008AAD2 /* SCTrackingView.m */; };
 		4FE9AEC41488817800E8D9B2 /* SCNewsItemViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE9AEC31488817800E8D9B2 /* SCNewsItemViewDataSource.m */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,8 @@
 		4FC6613D14840DA9009CCC9D /* SCFeedInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFeedInterpreter.m; sourceTree = "<group>"; };
 		4FD765C61489466C0008AAD2 /* SCBorderlessWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBorderlessWindow.h; sourceTree = "<group>"; };
 		4FD765C71489466C0008AAD2 /* SCBorderlessWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBorderlessWindow.m; sourceTree = "<group>"; };
+		4FD765CB14894F660008AAD2 /* SCTrackingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTrackingView.h; sourceTree = "<group>"; };
+		4FD765CC14894F660008AAD2 /* SCTrackingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTrackingView.m; sourceTree = "<group>"; };
 		4FE9AEC21488817800E8D9B2 /* SCNewsItemViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNewsItemViewDataSource.h; sourceTree = "<group>"; };
 		4FE9AEC31488817800E8D9B2 /* SCNewsItemViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNewsItemViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +199,8 @@
 			children = (
 				4FD765C61489466C0008AAD2 /* SCBorderlessWindow.h */,
 				4FD765C71489466C0008AAD2 /* SCBorderlessWindow.m */,
+				4FD765CB14894F660008AAD2 /* SCTrackingView.h */,
+				4FD765CC14894F660008AAD2 /* SCTrackingView.m */,
 			);
 			name = "Borderless Window";
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				4FC6613E14840DA9009CCC9D /* SCFeedInterpreter.m in Sources */,
 				4FE9AEC41488817800E8D9B2 /* SCNewsItemViewDataSource.m in Sources */,
 				4FD765C81489466C0008AAD2 /* SCBorderlessWindow.m in Sources */,
+				4FD765CD14894F660008AAD2 /* SCTrackingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,7 +32,6 @@
 
 @interface SCAppDelegate : NSObject <NSApplicationDelegate>
 {
-    TUINSView* viewContainer;
     SCBorderlessWindow *window;
     
     SCDisplayManager* displayManager;

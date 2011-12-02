@@ -10,13 +10,17 @@
 
 @implementation SCBorderlessWindow
 
+@synthesize trackingView;
+
 -(id)initWithContentRect:(NSRect)contentRect
 {
     self = [super initWithContentRect:contentRect styleMask:NSBorderlessWindowMask backing:NSBackingStoreBuffered defer:NO];
     if(self)
     {
+        trackingView = [[SCTrackingView alloc] initWithFrame:contentRect];
         [self setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces];
         [self setAcceptsMouseMovedEvents:YES];
+        [self setContentView:trackingView];
     }
     return self;
 }
@@ -34,14 +38,5 @@
     [self setFrameOrigin:NSMakePoint([self frame].origin.x, screenRect.origin.y)];
 }
 
--(void)mouseEntered:(NSEvent *)theEvent
-{
-    NSLog(@"I should stop moving!");
-}
-
--(void)mouseExited:(NSEvent *)theEvent
-{
-    NSLog(@"Move again!");
-}
 
 @end

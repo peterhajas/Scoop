@@ -29,6 +29,8 @@
 
 @implementation SCAppDelegate
 
+
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     CGRect frame = CGRectMake(0, 0, [[NSScreen mainScreen] visibleFrame].size.width, 40);
@@ -42,9 +44,8 @@
     displayManager = [[SCDisplayManager alloc] initWithViewFrame:frame];
     [displayManager prepareViews];
     // Our NSView bridge
-    viewContainer = [[TUINSView alloc] initWithFrame:frame];
+    TUINSView* viewContainer = [window trackingView];
     
-    [window setContentView:viewContainer];
     [viewContainer setRootView:[displayManager containerView]];
     
     [window makeKeyAndOrderFront:nil];
