@@ -46,7 +46,10 @@
 -(void)setFeedAddress:(NSURL *)_feedAddress
 {
     // Remove the feed address that was there, if there was one
-    [client removeFeed:[client feedWithURL:feedAddress]];
+    if([client feedWithURL:feedAddress])
+    {
+        [client removeFeed:[client feedWithURL:feedAddress]];
+    }
     feedAddress = _feedAddress;
     [client addFeedWithURL:feedAddress];
     
