@@ -53,4 +53,5 @@
 
 @property (nonatomic, readonly) TUIView* containerView;
 @property (readwrite, retain) NSURL* feedAddress;
+@property (readwrite, retain) SCFeedInterpreter* feedInterpreter;
 @end

@@ -25,21 +25,8 @@
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <Cocoa/Cocoa.h>
-#import <TwUI/TUIKit.h>
-#import "SCBorderlessWindow.h"
-#import "SCDisplayManager.h"
-#import "SCPreferencesWindowController.h"
+#import <Foundation/Foundation.h>
 
-@interface SCAppDelegate : NSObject <NSApplicationDelegate>
-{
-    SCBorderlessWindow *window;
-    
-    SCDisplayManager* displayManager;
-    
-    SCPreferencesWindowController* preferencesWindowController;
-}
-
-//-(void)move;
+@interface SCBooleanInverterValueTransformer : NSValueTransformer
 
 @end

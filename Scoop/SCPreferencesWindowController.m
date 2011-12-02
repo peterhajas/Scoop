@@ -25,21 +25,27 @@
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <Cocoa/Cocoa.h>
-#import <TwUI/TUIKit.h>
-#import "SCBorderlessWindow.h"
-#import "SCDisplayManager.h"
 #import "SCPreferencesWindowController.h"
 
-@interface SCAppDelegate : NSObject <NSApplicationDelegate>
+@implementation SCPreferencesWindowController
+
+@synthesize feedInterpreter, borderlessWindow;
+
+-(IBAction)feedChanged:(id)sender
 {
-    SCBorderlessWindow *window;
-    
-    SCDisplayManager* displayManager;
-    
-    SCPreferencesWindowController* preferencesWindowController;
+    [feedInterpreter setFeedAddress:[NSURL URLWithString:[[NSUserDefaults standardUserDefaults] valueForKey:@"feedAddress"]]];
 }
 
-//-(void)move;
+-(IBAction)positionChanged:(id)sender
+{
+    if([[[NSUserDefaults standardUserDefaults] valueForKey:@"appearOnTop"] boolValue])
+    {
+        [borderlessWindow goToTop];
+    }
+    else
+    {
+        [borderlessWindow goToBottom];
+    }
+}
 
 @end

@@ -26,20 +26,19 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import <TwUI/TUIKit.h>
+#import "SCFeedInterpreter.h"
 #import "SCBorderlessWindow.h"
-#import "SCDisplayManager.h"
-#import "SCPreferencesWindowController.h"
 
-@interface SCAppDelegate : NSObject <NSApplicationDelegate>
+@interface SCPreferencesWindowController : NSWindowController
 {
-    SCBorderlessWindow *window;
-    
-    SCDisplayManager* displayManager;
-    
-    SCPreferencesWindowController* preferencesWindowController;
+    SCFeedInterpreter* feedInterpreter;
+    SCBorderlessWindow* borderlessWindow;
 }
 
-//-(void)move;
+-(IBAction)feedChanged:(id)sender;
+-(IBAction)positionChanged:(id)sender;
+
+@property(readwrite, retain) SCFeedInterpreter* feedInterpreter;
+@property(readwrite, retain) SCBorderlessWindow* borderlessWindow;
 
 @end

@@ -48,7 +48,19 @@
     [viewContainer setDelegate:displayManager];
     
     [window makeKeyAndOrderFront:nil];
-    [window goToTop];
+    
+    preferencesWindowController = [[SCPreferencesWindowController alloc] initWithWindowNibName:@"SCPreferencesWindow"];
+    [preferencesWindowController setFeedInterpreter:[displayManager feedInterpreter]];
+    [preferencesWindowController setBorderlessWindow:window];
+    
+    if([[[NSUserDefaults standardUserDefaults] valueForKey:@"appearOnTop"] boolValue])
+    {
+        [window goToTop];
+    }
+    else
+    {
+        [window goToBottom];
+    }
 }
 
 @end

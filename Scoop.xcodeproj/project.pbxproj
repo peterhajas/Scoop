@@ -11,6 +11,8 @@
 		4F07A59D1483180700966A3A /* SCNewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F07A59C1483180700966A3A /* SCNewsItem.m */; };
 		4F07A59F14831DEB00966A3A /* TwUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F07A59E14831DEB00966A3A /* TwUI.framework */; };
 		4F07A5A61483466300966A3A /* SCDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F07A5A51483466300966A3A /* SCDisplayManager.m */; };
+		4F43DE791489592B001FE991 /* SCPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F43DE781489592B001FE991 /* SCPreferencesWindow.xib */; };
+		4F43DE7F14895AC5001FE991 /* SCBooleanInverterValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F43DE7E14895AC5001FE991 /* SCBooleanInverterValueTransformer.m */; };
 		4F9559401468E41500A83ABE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F95593F1468E41500A83ABE /* Cocoa.framework */; };
 		4F95594A1468E41500A83ABE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F9559481468E41500A83ABE /* InfoPlist.strings */; };
 		4F95594C1468E41500A83ABE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F95594B1468E41500A83ABE /* main.m */; };
@@ -22,6 +24,7 @@
 		4FC6613E14840DA9009CCC9D /* SCFeedInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC6613D14840DA9009CCC9D /* SCFeedInterpreter.m */; };
 		4FD765C81489466C0008AAD2 /* SCBorderlessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD765C71489466C0008AAD2 /* SCBorderlessWindow.m */; };
 		4FD765CD14894F660008AAD2 /* SCTrackingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD765CC14894F660008AAD2 /* SCTrackingView.m */; };
+		4FD765D0148958FA0008AAD2 /* SCPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD765CF148958FA0008AAD2 /* SCPreferencesWindowController.m */; };
 		4FE9AEC41488817800E8D9B2 /* SCNewsItemViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE9AEC31488817800E8D9B2 /* SCNewsItemViewDataSource.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,9 @@
 		4F07A59E14831DEB00966A3A /* TwUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwUI.framework; sourceTree = "<group>"; };
 		4F07A5A41483466300966A3A /* SCDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCDisplayManager.h; path = Scoop/SCDisplayManager.h; sourceTree = "<group>"; };
 		4F07A5A51483466300966A3A /* SCDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCDisplayManager.m; path = Scoop/SCDisplayManager.m; sourceTree = "<group>"; };
+		4F43DE781489592B001FE991 /* SCPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCPreferencesWindow.xib; sourceTree = "<group>"; };
+		4F43DE7D14895AC5001FE991 /* SCBooleanInverterValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBooleanInverterValueTransformer.h; sourceTree = "<group>"; };
+		4F43DE7E14895AC5001FE991 /* SCBooleanInverterValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBooleanInverterValueTransformer.m; sourceTree = "<group>"; };
 		4F95593B1468E41500A83ABE /* Scoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F95593F1468E41500A83ABE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4F9559421468E41500A83ABE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -68,6 +74,8 @@
 		4FD765C71489466C0008AAD2 /* SCBorderlessWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBorderlessWindow.m; sourceTree = "<group>"; };
 		4FD765CB14894F660008AAD2 /* SCTrackingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTrackingView.h; sourceTree = "<group>"; };
 		4FD765CC14894F660008AAD2 /* SCTrackingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTrackingView.m; sourceTree = "<group>"; };
+		4FD765CE148958FA0008AAD2 /* SCPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPreferencesWindowController.h; sourceTree = "<group>"; };
+		4FD765CF148958FA0008AAD2 /* SCPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPreferencesWindowController.m; sourceTree = "<group>"; };
 		4FE9AEC21488817800E8D9B2 /* SCNewsItemViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNewsItemViewDataSource.h; sourceTree = "<group>"; };
 		4FE9AEC31488817800E8D9B2 /* SCNewsItemViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNewsItemViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +114,18 @@
 				4FE9AEC31488817800E8D9B2 /* SCNewsItemViewDataSource.m */,
 			);
 			name = "News Item";
+			sourceTree = "<group>";
+		};
+		4F43DE7614895918001FE991 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				4F43DE7D14895AC5001FE991 /* SCBooleanInverterValueTransformer.h */,
+				4F43DE7E14895AC5001FE991 /* SCBooleanInverterValueTransformer.m */,
+				4FD765CE148958FA0008AAD2 /* SCPreferencesWindowController.h */,
+				4FD765CF148958FA0008AAD2 /* SCPreferencesWindowController.m */,
+				4F43DE781489592B001FE991 /* SCPreferencesWindow.xib */,
+			);
+			name = Preferences;
 			sourceTree = "<group>";
 		};
 		4F78FB501483468300D489B7 /* Display Manager */ = {
@@ -168,6 +188,7 @@
 				4FC6614014840DAC009CCC9D /* Feed Interpreter */,
 				4F07A59A148317F400966A3A /* News Item */,
 				4F9559541468E41500A83ABE /* MainMenu.xib */,
+				4F43DE7614895918001FE991 /* Preferences */,
 				4F9559461468E41500A83ABE /* Supporting Files */,
 			);
 			path = Scoop;
@@ -259,6 +280,7 @@
 				4F95594A1468E41500A83ABE /* InfoPlist.strings in Resources */,
 				4F9559501468E41500A83ABE /* Credits.rtf in Resources */,
 				4F9559561468E41500A83ABE /* MainMenu.xib in Resources */,
+				4F43DE791489592B001FE991 /* SCPreferencesWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +301,8 @@
 				4FE9AEC41488817800E8D9B2 /* SCNewsItemViewDataSource.m in Sources */,
 				4FD765C81489466C0008AAD2 /* SCBorderlessWindow.m in Sources */,
 				4FD765CD14894F660008AAD2 /* SCTrackingView.m in Sources */,
+				4FD765D0148958FA0008AAD2 /* SCPreferencesWindowController.m in Sources */,
+				4F43DE7F14895AC5001FE991 /* SCBooleanInverterValueTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

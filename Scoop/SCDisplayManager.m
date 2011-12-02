@@ -124,5 +124,10 @@
     [[newsItemViewDataSource feedIntepreter] setFeedAddress:feedAddress];
 }
 
+-(SCFeedInterpreter*)feedInterpreter
+{
+    return newsItemViewDataSource.feedIntepreter;
+}
+
 
 @end

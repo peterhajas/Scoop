@@ -25,21 +25,13 @@
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <Cocoa/Cocoa.h>
-#import <TwUI/TUIKit.h>
-#import "SCBorderlessWindow.h"
-#import "SCDisplayManager.h"
-#import "SCPreferencesWindowController.h"
+#import "SCBooleanInverterValueTransformer.h"
 
-@interface SCAppDelegate : NSObject <NSApplicationDelegate>
+@implementation SCBooleanInverterValueTransformer
+
+-(id)transformedValue:(id)value
 {
-    SCBorderlessWindow *window;
-    
-    SCDisplayManager* displayManager;
-    
-    SCPreferencesWindowController* preferencesWindowController;
+    return [NSNumber numberWithBool:![(NSNumber*)value boolValue]];
 }
-
-//-(void)move;
 
 @end
