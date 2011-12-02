@@ -71,6 +71,7 @@
 -(void)activate
 {
     // Open the URL associated with this news item
+    [[NSWorkspace sharedWorkspace] openURL:[backingNewsItem linkToItem]];
 }
 
 @end
