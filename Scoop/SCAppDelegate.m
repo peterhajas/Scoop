@@ -29,8 +29,6 @@
 
 @implementation SCAppDelegate
 
-
-
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     CGRect frame = CGRectMake(0, 0, [[NSScreen mainScreen] visibleFrame].size.width, 40);
