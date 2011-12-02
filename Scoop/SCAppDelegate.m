@@ -31,7 +31,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    CGRect frame = CGRectMake(0, 0, 1000, 40);
+    CGRect frame = CGRectMake(0, 0, [[NSScreen mainScreen] visibleFrame].size.width, 40);
     window = [[SCBorderlessWindow alloc] initWithContentRect:frame];
     
     [window setReleasedWhenClosed:NO];
