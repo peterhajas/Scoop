@@ -110,7 +110,6 @@
 		4F9559301468E41500A83ABE = {
 			isa = PBXGroup;
 			children = (
-				4FAC77261488058E003CD087 /* PubSub.framework */,
 				4F9559451468E41500A83ABE /* Scoop */,
 				4F95593E1468E41500A83ABE /* Frameworks */,
 				4F95593C1468E41500A83ABE /* Products */,
@@ -137,6 +136,7 @@
 		4F9559411468E41500A83ABE /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4FAC77261488058E003CD087 /* PubSub.framework */,
 				4F07A59E14831DEB00966A3A /* TwUI.framework */,
 				4F9559641468E52500A83ABE /* QuartzCore.framework */,
 				4F9559421468E41500A83ABE /* AppKit.framework */,
