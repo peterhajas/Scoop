@@ -28,9 +28,11 @@
 #import <TwUI/TUIKit.h>
 #import "SCInfiniteScrollView.h"
 #import "SCNewsItemViewDataSource.h"
+#import "SCTrackingView.h"
 
 @interface SCDisplayManager : NSObject <SCInfiniteScrollViewDataSource,
-                                        SCNewsItemViewDataSourceProtocol>
+                                        SCNewsItemViewDataSourceProtocol,
+                                        SCTrackingViewHoverDelegate>
 {
     TUIView* containerView;
     CGRect viewFrame;
@@ -38,10 +40,16 @@
     SCInfiniteScrollView* scrollView;
     
     SCNewsItemViewDataSource* newsItemViewDataSource;
+    
+    NSTimer* scrollingTimer;
+    
+    BOOL shouldBeScrolling;
 }
 
 -(id)initWithViewFrame:(CGRect)frame;
 -(void)prepareViews;
+
+-(void)advanceScrollView;
 
 @property (nonatomic, readonly) TUIView* containerView;
 @property (readwrite, retain) NSURL* feedAddress;

@@ -42,9 +42,10 @@
     displayManager = [[SCDisplayManager alloc] initWithViewFrame:frame];
     [displayManager prepareViews];
     // Our NSView bridge
-    TUINSView* viewContainer = [window trackingView];
+    SCTrackingView* viewContainer = [window trackingView];
     
     [viewContainer setRootView:[displayManager containerView]];
+    [viewContainer setDelegate:displayManager];
     
     [window makeKeyAndOrderFront:nil];
     [window goToTop];

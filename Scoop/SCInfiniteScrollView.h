@@ -46,8 +46,9 @@
 
 -(id)initWithDataSource:(id<SCInfiniteScrollViewDataSource>) _dataSource;
 -(void)reloadData;
--(CGPoint)contentOffset;
 -(CGSize)contentSize;
 -(void)setFrame:(CGRect)frame;
+
+@property (readwrite) CGPoint contentOffset;
 
 @end

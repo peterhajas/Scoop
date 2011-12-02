@@ -37,6 +37,8 @@
     if(self)
     {
         viewFrame = frame;
+        scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:.01 target:self selector:@selector(advanceScrollView) userInfo:nil repeats:YES];
+        shouldBeScrolling = YES;
     }
     return self;
 }
@@ -91,6 +93,25 @@
 -(void)feedRefreshed
 {
     [scrollView reloadData];
+}
+
+-(void)advanceScrollView
+{
+    if(shouldBeScrolling)
+    {
+        CGPoint contentOffset = [scrollView contentOffset];
+        [scrollView setContentOffset:CGPointMake(contentOffset.x - 1, contentOffset.y)];   
+    }
+}
+
+-(void)mouseIsHovering
+{
+    shouldBeScrolling = NO;
+}
+
+-(void)mouseStoppedHovering
+{
+    shouldBeScrolling = YES;
 }
 
 -(NSURL*)feedAddress

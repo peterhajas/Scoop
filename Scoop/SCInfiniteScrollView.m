@@ -155,6 +155,11 @@
     return [scrollView contentOffset];
 }
 
+-(void)setContentOffset:(CGPoint)contentOffset
+{
+    [scrollView setContentOffset:contentOffset];
+}
+
 -(CGSize)contentSize
 {
     return [scrollView contentSize];

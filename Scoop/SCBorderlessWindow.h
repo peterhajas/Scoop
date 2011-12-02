@@ -33,7 +33,7 @@
     SCTrackingView* trackingView;
 }
 
-@property (nonatomic, retain) TUINSView* trackingView;
+@property (nonatomic, retain) SCTrackingView* trackingView;
 
 -(id)initWithContentRect:(NSRect)contentRect;
 -(void)goToTop;
