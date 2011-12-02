@@ -31,7 +31,6 @@
 @interface SCNewsItemView : TUIView
 {
     TUILabel* headlineLabel;
-    TUILabel* descriptionLabel;
     
     TUIButton* activateButton;
     

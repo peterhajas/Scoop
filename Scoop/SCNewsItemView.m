@@ -36,32 +36,22 @@
     {
         backingNewsItem = _backingNewsItem;
         
-        headlineLabel = [[TUILabel alloc] initWithFrame:CGRectMake(20,
+        headlineLabel = [[TUILabel alloc] initWithFrame:CGRectMake(10,
                                                                    10,
-                                                                   SCNewsItemWidth/3,
+                                                                   SCNewsItemWidth - 20,
                                                                    SCNewsItemHeight - 20)];
         [headlineLabel setFont:[TUIFont boldSystemFontOfSize:17.0]];
         [headlineLabel setTextColor:[TUIColor whiteColor]];
         [headlineLabel setBackgroundColor:[TUIColor redColor]];
-        
-        descriptionLabel = [[TUILabel alloc] initWithFrame:CGRectMake(40 + SCNewsItemWidth/3,
-                                                                      10,
-                                                                      SCNewsItemWidth/1.7,
-                                                                      SCNewsItemHeight - 20)];
-        [descriptionLabel setFont:[TUIFont systemFontOfSize:17.0]];
-        [descriptionLabel setTextColor:[TUIColor lightGrayColor]];
-        [descriptionLabel setBackgroundColor:[TUIColor blueColor]];
-        
+                
         activateButton = [TUIButton button];
         [activateButton setFrame:[self frame]];
         
         [headlineLabel setText:[backingNewsItem headline]];
-        [descriptionLabel setText:[backingNewsItem newsDescription]];
         [activateButton addTarget:self action:@selector(activate) forControlEvents:TUIControlEventTouchUpInside];
         
         
         [self addSubview:headlineLabel];
-        [self addSubview:descriptionLabel];
         [self addSubview:activateButton];
     }
     
