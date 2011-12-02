@@ -64,6 +64,7 @@
     
     // Restore settings
     [feed setSettings:feedSettings];
+    [feed refresh:nil];
 }
 
 -(NSURL*)feedAddress
