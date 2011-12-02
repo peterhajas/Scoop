@@ -6,5 +6,5 @@
     #import <Cocoa/Cocoa.h>
 #endif
 
-#define SCNewsItemWidth 300
+#define SCNewsItemWidth 1000
 #define SCNewsItemHeight 40

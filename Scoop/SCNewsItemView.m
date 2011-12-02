@@ -46,7 +46,7 @@
         
         descriptionLabel = [[TUILabel alloc] initWithFrame:CGRectMake(40 + SCNewsItemWidth/3,
                                                                       10,
-                                                                      SCNewsItemWidth/2.5,
+                                                                      SCNewsItemWidth/1.7,
                                                                       SCNewsItemHeight - 20)];
         [descriptionLabel setFont:[TUIFont systemFontOfSize:17.0]];
         [descriptionLabel setTextColor:[TUIColor lightGrayColor]];
