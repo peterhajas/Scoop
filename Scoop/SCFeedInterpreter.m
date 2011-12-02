@@ -35,8 +35,9 @@
     if(self)
     {
         client = [PSClient applicationClient];
-        feedAddress = nil;
+        feedAddress = [NSURL URLWithString:@""];
         [client setDelegate:self];
+        delegate = _delegate;
     }
     
     return self;
