@@ -20,6 +20,7 @@
 		4FAC77271488058F003CD087 /* PubSub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAC77261488058E003CD087 /* PubSub.framework */; };
 		4FC3C969146A2522009ADF16 /* SCInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3C968146A2522009ADF16 /* SCInfiniteScrollView.m */; };
 		4FC6613E14840DA9009CCC9D /* SCFeedInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC6613D14840DA9009CCC9D /* SCFeedInterpreter.m */; };
+		4FE9AEC41488817800E8D9B2 /* SCNewsItemViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE9AEC31488817800E8D9B2 /* SCNewsItemViewDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +62,8 @@
 		4FC3C968146A2522009ADF16 /* SCInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCInfiniteScrollView.m; sourceTree = "<group>"; };
 		4FC6613C14840DA9009CCC9D /* SCFeedInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFeedInterpreter.h; sourceTree = "<group>"; };
 		4FC6613D14840DA9009CCC9D /* SCFeedInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFeedInterpreter.m; sourceTree = "<group>"; };
+		4FE9AEC21488817800E8D9B2 /* SCNewsItemViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNewsItemViewDataSource.h; sourceTree = "<group>"; };
+		4FE9AEC31488817800E8D9B2 /* SCNewsItemViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNewsItemViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				4F07A59C1483180700966A3A /* SCNewsItem.m */,
 				4F07A597148317EB00966A3A /* SCNewsItemView.h */,
 				4F07A598148317EB00966A3A /* SCNewsItemView.m */,
+				4FE9AEC21488817800E8D9B2 /* SCNewsItemViewDataSource.h */,
+				4FE9AEC31488817800E8D9B2 /* SCNewsItemViewDataSource.m */,
 			);
 			name = "News Item";
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				4F07A59D1483180700966A3A /* SCNewsItem.m in Sources */,
 				4F07A5A61483466300966A3A /* SCDisplayManager.m in Sources */,
 				4FC6613E14840DA9009CCC9D /* SCFeedInterpreter.m in Sources */,
+				4FE9AEC41488817800E8D9B2 /* SCNewsItemViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
