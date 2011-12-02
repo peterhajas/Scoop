@@ -8,9 +8,20 @@
 
 #import <TwUI/TUIKit.h>
 
+@protocol SCTrackingViewHoverDelegate <NSObject>
+
+-(void)mouseIsHovering;
+-(void)mouseStoppedHovering;
+
+@end
+
 @interface SCTrackingView : TUINSView
 {
     NSTrackingArea* trackingArea;
+    
+    id<SCTrackingViewHoverDelegate> delegate;
 }
+
+@property (readwrite, retain) id<SCTrackingViewHoverDelegate> delegate;
 
 @end

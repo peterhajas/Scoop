@@ -10,6 +10,8 @@
 
 @implementation SCTrackingView
 
+@synthesize delegate;
+
 -(id)initWithFrame:(NSRect)frameRect
 {
     self = [super initWithFrame:frameRect];
@@ -26,12 +28,18 @@
 
 -(void)mouseEntered:(NSEvent *)theEvent
 {
-    NSLog(@"I should stop moving!");
+    if(delegate)
+    {
+        [delegate mouseIsHovering];
+    }
 }
 
 -(void)mouseExited:(NSEvent *)theEvent
 {
-    NSLog(@"Move again!");
+    if(delegate)
+    {
+        [delegate mouseStoppedHovering];
+    }
 }
 
 @end
