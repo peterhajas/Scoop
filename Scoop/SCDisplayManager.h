@@ -27,13 +27,17 @@
 
 #import <TwUI/TUIKit.h>
 #import "SCInfiniteScrollView.h"
-#import "SCNewsItemView.h"
+#import "SCNewsItemViewDataSource.h"
 
-@interface SCDisplayManager : NSObject <SCInfiniteScrollViewDataSource>
+@interface SCDisplayManager : NSObject <SCInfiniteScrollViewDataSource,
+                                        SCNewsItemViewDataSourceProtocol>
 {
     TUIView* containerView;
     CGRect viewFrame;
+    
     SCInfiniteScrollView* scrollView;
+    
+    SCNewsItemViewDataSource* newsItemViewDataSource;
 }
 
 -(id)initWithViewFrame:(CGRect)frame;

@@ -54,21 +54,43 @@
     [scrollView setFrame:viewFrame];
     [containerView addSubview:scrollView];    
     [scrollView reloadData];
+    
+    // Get the news item view data source ready
+    newsItemViewDataSource = [[SCNewsItemViewDataSource alloc] initWithDelegate:self];
 }
 
 -(NSUInteger)numberOfViews
 {
-    return 10;
+    return [newsItemViewDataSource newsItemCount];
 }
 
 -(TUIView*)viewAtIndex:(NSUInteger)index
 {    
-    // Create the SCNewsItem
+    // Grab the SCNewsItemView from the news item view data source
     
-    SCNewsItem* newsItem = [[SCNewsItem alloc] initWithHeadline:[NSString stringWithFormat:@"Headline %lu", index] newsDescription:@"Description" andLinkToItem:[NSURL URLWithString:@"localhost"]];
-    SCNewsItemView* newsItemView = [[SCNewsItemView alloc] initWithBackingNewsItem:newsItem];
+    SCNewsItemView* newsItemView = [newsItemViewDataSource newsItemViewAtIndex:index];
     
     return newsItemView;
+}
+
+-(void)feedHasUpdateStatus:(BOOL)isUpdating
+{
+    // We should probably do something here, with regards to showing the user there's new stuff
+    if(!isUpdating)
+    {
+        // They're done updating!
+        [scrollView reloadData];
+    }
+}
+
+-(void)feedHasNewItems
+{
+    [scrollView reloadData];
+}
+
+-(void)feedRefreshed
+{
+    [scrollView reloadData];
 }
 
 
