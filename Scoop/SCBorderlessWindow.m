@@ -15,7 +15,7 @@
     self = [super initWithContentRect:contentRect styleMask:NSBorderlessWindowMask backing:NSBackingStoreBuffered defer:NO];
     if(self)
     {
-        
+        [self setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces];
     }
     return self;
 }
@@ -31,6 +31,16 @@
 {
     NSRect screenRect = [[NSScreen mainScreen] visibleFrame];
     [self setFrameOrigin:NSMakePoint([self frame].origin.x, screenRect.origin.y)];
+}
+
+-(void)mouseEntered:(NSEvent *)theEvent
+{
+    NSLog(@"I should stop moving!");
+}
+
+-(void)mouseExited:(NSEvent *)theEvent
+{
+    NSLog(@"Move again!");
 }
 
 @end
