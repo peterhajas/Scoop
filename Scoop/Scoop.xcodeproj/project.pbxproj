@@ -21,18 +21,21 @@
 		4FC6613E14840DA9009CCC9D /* SCFeedInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC6613D14840DA9009CCC9D /* SCFeedInterpreter.m */; };
 		4FD765C81489466C0008AAD2 /* SCBorderlessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD765C71489466C0008AAD2 /* SCBorderlessWindow.m */; };
 		4FD765CD14894F660008AAD2 /* SCTrackingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD765CC14894F660008AAD2 /* SCTrackingView.m */; };
+		4FDD488F148C987F0051BF7C /* TwUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDD488E148C987F0051BF7C /* TwUI.framework */; };
+		4FDD4891148C99010051BF7C /* TwUI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FDD488E148C987F0051BF7C /* TwUI.framework */; };
 		4FE9AEC41488817800E8D9B2 /* SCNewsItemViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE9AEC31488817800E8D9B2 /* SCNewsItemViewDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4F9559661468EBE900A83ABE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4FDD4891148C99010051BF7C /* TwUI.framework in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -66,6 +69,7 @@
 		4FD765C71489466C0008AAD2 /* SCBorderlessWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBorderlessWindow.m; sourceTree = "<group>"; };
 		4FD765CB14894F660008AAD2 /* SCTrackingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTrackingView.h; sourceTree = "<group>"; };
 		4FD765CC14894F660008AAD2 /* SCTrackingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTrackingView.m; sourceTree = "<group>"; };
+		4FDD488E148C987F0051BF7C /* TwUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwUI.framework; path = "../../../Library/Developer/Xcode/DerivedData/Scoop-grcwlplhhtnrzgfrqytmytfotoru/Build/Products/Debug/TwUI.framework"; sourceTree = "<group>"; };
 		4FE9AEC21488817800E8D9B2 /* SCNewsItemViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNewsItemViewDataSource.h; sourceTree = "<group>"; };
 		4FE9AEC31488817800E8D9B2 /* SCNewsItemViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNewsItemViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FDD488F148C987F0051BF7C /* TwUI.framework in Frameworks */,
 				4FAC77271488058F003CD087 /* PubSub.framework in Frameworks */,
 				4F9559401468E41500A83ABE /* Cocoa.framework in Frameworks */,
 			);
@@ -135,6 +140,7 @@
 		4F95593E1468E41500A83ABE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4FDD488E148C987F0051BF7C /* TwUI.framework */,
 				4F95593F1468E41500A83ABE /* Cocoa.framework */,
 				4F9559411468E41500A83ABE /* Other Frameworks */,
 			);
@@ -362,6 +368,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/TwUI-bnrayguwtffwiggvhigbtyvedhon/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/Scoop-grcwlplhhtnrzgfrqytmytfotoru/Build/Products/Debug\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scoop/Scoop-Prefix.pch";
@@ -380,6 +387,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/TwUI-bnrayguwtffwiggvhigbtyvedhon/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/Scoop-grcwlplhhtnrzgfrqytmytfotoru/Build/Products/Debug\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scoop/Scoop-Prefix.pch";
