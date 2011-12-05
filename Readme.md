@@ -17,7 +17,8 @@ TwUI is included as a git submodule. You'll need to grab it with:
 
 in the top-level directory.
 
-Then, open the `Scoop.xcworkspace`, and hit Run.
+Then, open the `Scoop.xcworkspace`. Go to File->Workspace Settings
+and change the Derived Data Location to "Workspace-relative".
 
 Legal
 -----
