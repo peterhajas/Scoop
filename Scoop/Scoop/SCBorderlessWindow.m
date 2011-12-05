@@ -40,6 +40,7 @@
         [self setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces];
         [self setAcceptsMouseMovedEvents:YES];
         [self setContentView:trackingView];
+        [self setLevel:NSFloatingWindowLevel];
     }
     return self;
 }
