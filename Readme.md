@@ -13,7 +13,7 @@ Building
 
 TwUI is included as a git submodule. You'll need to grab it with:
 
-`git submodule update`
+`git submodule init && git submodule update`
 
 in the top-level directory.
 
