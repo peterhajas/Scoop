@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4F07A599148317EB00966A3A /* SCNewsItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F07A598148317EB00966A3A /* SCNewsItemView.m */; };
 		4F07A59D1483180700966A3A /* SCNewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F07A59C1483180700966A3A /* SCNewsItem.m */; };
-		4F07A59F14831DEB00966A3A /* TwUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F07A59E14831DEB00966A3A /* TwUI.framework */; };
 		4F07A5A61483466300966A3A /* SCDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F07A5A51483466300966A3A /* SCDisplayManager.m */; };
 		4F9559401468E41500A83ABE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F95593F1468E41500A83ABE /* Cocoa.framework */; };
 		4F95594A1468E41500A83ABE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F9559481468E41500A83ABE /* InfoPlist.strings */; };
@@ -42,7 +41,6 @@
 		4F07A598148317EB00966A3A /* SCNewsItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNewsItemView.m; sourceTree = "<group>"; };
 		4F07A59B1483180700966A3A /* SCNewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNewsItem.h; sourceTree = "<group>"; };
 		4F07A59C1483180700966A3A /* SCNewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNewsItem.m; sourceTree = "<group>"; };
-		4F07A59E14831DEB00966A3A /* TwUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwUI.framework; sourceTree = "<group>"; };
 		4F07A5A41483466300966A3A /* SCDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCDisplayManager.h; path = Scoop/SCDisplayManager.h; sourceTree = "<group>"; };
 		4F07A5A51483466300966A3A /* SCDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCDisplayManager.m; path = Scoop/SCDisplayManager.m; sourceTree = "<group>"; };
 		4F95593B1468E41500A83ABE /* Scoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +77,6 @@
 			files = (
 				4FAC77271488058F003CD087 /* PubSub.framework in Frameworks */,
 				4F9559401468E41500A83ABE /* Cocoa.framework in Frameworks */,
-				4F07A59F14831DEB00966A3A /* TwUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				4FAC77261488058E003CD087 /* PubSub.framework */,
-				4F07A59E14831DEB00966A3A /* TwUI.framework */,
 				4F9559641468E52500A83ABE /* QuartzCore.framework */,
 				4F9559421468E41500A83ABE /* AppKit.framework */,
 				4F9559431468E41500A83ABE /* CoreData.framework */,
