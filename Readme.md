@@ -8,6 +8,17 @@ About
 
 Scoop is a news ticker for the Mac.
 
+Building
+--------
+
+TwUI is included as a git submodule. You'll need to grab it with:
+
+`git submodule update`
+
+in the top-level directory.
+
+Then, open the `Scoop.xcworkspace`, and hit Run.
+
 Legal
 -----
 
@@ -16,9 +27,5 @@ license can be found at the top of the source files.
 
 Scoop makes use of TwUI, a framework by Loren Brichter and Twitter. TwUI is
 licensed under the Apache license. You can find TwUI at https://github.com/twitter/twui
-
-The TwUI license is included in the TwUILicense file in the root directory.
-
-TwUI is currently included as a binary in the repository, although this could change.
 
 The work in Scoop does not imply endorsement by past, current or future employers.
