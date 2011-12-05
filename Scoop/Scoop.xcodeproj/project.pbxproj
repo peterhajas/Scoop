@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43F9B285148CA01F003D325B /* TwUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F9B284148CA01F003D325B /* TwUI.framework */; };
+		43F9B286148CA023003D325B /* TwUI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43F9B284148CA01F003D325B /* TwUI.framework */; };
 		4F07A599148317EB00966A3A /* SCNewsItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F07A598148317EB00966A3A /* SCNewsItemView.m */; };
 		4F07A59D1483180700966A3A /* SCNewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F07A59C1483180700966A3A /* SCNewsItem.m */; };
 		4F07A5A61483466300966A3A /* SCDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F07A5A51483466300966A3A /* SCDisplayManager.m */; };
@@ -21,8 +23,6 @@
 		4FC6613E14840DA9009CCC9D /* SCFeedInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC6613D14840DA9009CCC9D /* SCFeedInterpreter.m */; };
 		4FD765C81489466C0008AAD2 /* SCBorderlessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD765C71489466C0008AAD2 /* SCBorderlessWindow.m */; };
 		4FD765CD14894F660008AAD2 /* SCTrackingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD765CC14894F660008AAD2 /* SCTrackingView.m */; };
-		4FDD488F148C987F0051BF7C /* TwUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDD488E148C987F0051BF7C /* TwUI.framework */; };
-		4FDD4891148C99010051BF7C /* TwUI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FDD488E148C987F0051BF7C /* TwUI.framework */; };
 		4FE9AEC41488817800E8D9B2 /* SCNewsItemViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE9AEC31488817800E8D9B2 /* SCNewsItemViewDataSource.m */; };
 /* End PBXBuildFile section */
 
@@ -33,13 +33,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4FDD4891148C99010051BF7C /* TwUI.framework in CopyFiles */,
+				43F9B286148CA023003D325B /* TwUI.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		43F9B284148CA01F003D325B /* TwUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwUI.framework; path = ../DerivedData/Scoop/Build/Products/Debug/TwUI.framework; sourceTree = "<group>"; };
 		4F07A597148317EB00966A3A /* SCNewsItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNewsItemView.h; sourceTree = "<group>"; };
 		4F07A598148317EB00966A3A /* SCNewsItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNewsItemView.m; sourceTree = "<group>"; };
 		4F07A59B1483180700966A3A /* SCNewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNewsItem.h; sourceTree = "<group>"; };
@@ -69,7 +70,6 @@
 		4FD765C71489466C0008AAD2 /* SCBorderlessWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBorderlessWindow.m; sourceTree = "<group>"; };
 		4FD765CB14894F660008AAD2 /* SCTrackingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTrackingView.h; sourceTree = "<group>"; };
 		4FD765CC14894F660008AAD2 /* SCTrackingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTrackingView.m; sourceTree = "<group>"; };
-		4FDD488E148C987F0051BF7C /* TwUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwUI.framework; path = "../../../Library/Developer/Xcode/DerivedData/Scoop-grcwlplhhtnrzgfrqytmytfotoru/Build/Products/Debug/TwUI.framework"; sourceTree = "<group>"; };
 		4FE9AEC21488817800E8D9B2 /* SCNewsItemViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNewsItemViewDataSource.h; sourceTree = "<group>"; };
 		4FE9AEC31488817800E8D9B2 /* SCNewsItemViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNewsItemViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,9 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FDD488F148C987F0051BF7C /* TwUI.framework in Frameworks */,
 				4FAC77271488058F003CD087 /* PubSub.framework in Frameworks */,
 				4F9559401468E41500A83ABE /* Cocoa.framework in Frameworks */,
+				43F9B285148CA01F003D325B /* TwUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +123,7 @@
 		4F9559301468E41500A83ABE = {
 			isa = PBXGroup;
 			children = (
+				43F9B284148CA01F003D325B /* TwUI.framework */,
 				4F9559451468E41500A83ABE /* Scoop */,
 				4F95593E1468E41500A83ABE /* Frameworks */,
 				4F95593C1468E41500A83ABE /* Products */,
@@ -140,7 +141,6 @@
 		4F95593E1468E41500A83ABE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4FDD488E148C987F0051BF7C /* TwUI.framework */,
 				4F95593F1468E41500A83ABE /* Cocoa.framework */,
 				4F9559411468E41500A83ABE /* Other Frameworks */,
 			);
@@ -369,6 +369,7 @@
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/TwUI-bnrayguwtffwiggvhigbtyvedhon/Build/Products/Debug\"",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/Scoop-grcwlplhhtnrzgfrqytmytfotoru/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../DerivedData/Scoop/Build/Products/Debug\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scoop/Scoop-Prefix.pch";
@@ -388,6 +389,7 @@
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/TwUI-bnrayguwtffwiggvhigbtyvedhon/Build/Products/Debug\"",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/Scoop-grcwlplhhtnrzgfrqytmytfotoru/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../DerivedData/Scoop/Build/Products/Debug\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scoop/Scoop-Prefix.pch";
