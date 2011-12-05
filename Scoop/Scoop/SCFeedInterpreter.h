@@ -47,6 +47,7 @@
 }
 
 -(id)initWithDelegate:(id)_delegate;
+-(void)forceRefresh;
 
 @property (readwrite, retain) NSURL* feedAddress;
 

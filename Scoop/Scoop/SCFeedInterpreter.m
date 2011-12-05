@@ -43,6 +43,12 @@
     return self;
 }
 
+-(void)forceRefresh
+{
+    PSFeed* feed = [client feedWithURL:feedAddress];
+    [feed refresh:nil];
+}
+
 -(void)setFeedAddress:(NSURL *)_feedAddress
 {
     // Remove the feed address that was there, if there was one
